@@ -17,10 +17,10 @@ st.set_page_config(
 )
 
 ### Title of Project ###
-st.title("**:red[WindSense: Turbine Health Prediction]**")
+st.title("**:red[Wind Whisper: Turbine Health Prediction]**")
 
 ### Markdown ###
-st.markdown("**Introducing :red[Wind Whisper] Empowering Turbine Health Classification using Sensory Data and Logistic Regression **.")
+st.markdown("**Introducing :red[Wind Whisper] Empowering Turbine Health Classification using Sensory Data and Logistic Regression.**")
 
 ### Adding Image ###
 st.image("https://raw.githubusercontent.com/HikmetEmre/Wind_Turbine_Checker/main/f_turbine.jpg")
@@ -50,6 +50,8 @@ st.image("https://raw.githubusercontent.com/HikmetEmre/Wind_Turbine_Checker/main
 ### Example DF ON STREAMLIT PAGE ###
 df=pd.read_csv('for_meta.csv')
 
+df.drop(columns=['Unnamed: 0'], inplace=True)
+
 
 ### Example TABLE ###
 st.table(df.sample(5, random_state=17))
@@ -59,7 +61,7 @@ st.table(df.sample(5, random_state=17))
 #---------------------------------------------------------------------------------------------------------------------
 
 ### Sidebar Markdown ###
-st.sidebar.markdown("**INPUT** , **:red[Sensation Data] Below & See The Condition of Turbine!")
+st.sidebar.markdown("**INPUT** , **:red[Sensation Data] Below & See The Condition of Turbine!**")
 
 ### Define Sidebar Input's ###
 AN3 = st.sidebar.number_input("**:red[AN3 Value]**")
