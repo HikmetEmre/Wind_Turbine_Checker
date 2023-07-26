@@ -1,4 +1,4 @@
-### New App For Work Accidents Classify ###
+### New App For Work Wind Turbine Classify ###
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
@@ -135,7 +135,7 @@ if st.sidebar.button("Submit"):
    
 
 
-   st.table(results_df)
+    st.table(results_df)
 
     if pred == 1:
         st.markdown('**:blue[Healthy]**')
