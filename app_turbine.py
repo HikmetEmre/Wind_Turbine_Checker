@@ -135,12 +135,14 @@ if st.sidebar.button("Submit"):
    
 
 
-    st.table(pred)
+   st.table(results_df)
 
     if pred == 1:
+        st.markdown('**:blue[Healthy]**')
         st.image("https://raw.githubusercontent.com/HikmetEmre/Wind_Turbine_Checker/main/healthy.jpg")
 
     elif pred == 0:
+        st.markdown("**:red[Damaged]**")
         st.image("https://raw.githubusercontent.com/HikmetEmre/Wind_Turbine_Checker/main/dmgd.jpg")
       
 else:
